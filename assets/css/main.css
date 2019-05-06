@@ -1773,6 +1773,10 @@
 		color: #5AA6ED;
 	}
 
+	a.icon {
+		color: #555;
+	}
+
 	strong, b {
 		color: #555;
 	}
@@ -3073,6 +3077,12 @@
 			.wrapper.style2 table.alt tbody tr td {
 				border-color: rgba(0, 0, 0, 0.15);
 			}
+			.wrapper.wrapper header {
+				font-size: 1.75em;
+				text-transform: capitalize;
+				color: #006400;
+				margin:0 0 1.5rem 0;
+			}
 
 		.wrapper.style3 {
 			background-color: #000;
@@ -3097,7 +3107,7 @@
 			}
 
 			.wrapper.style3 h1, .wrapper.style3 h2, .wrapper.style3 h3, .wrapper.style3 h4, .wrapper.style3 h5, .wrapper.style3 h6 {
-				color: #ffffff;
+				color: #006400;
 			}
 
 			.wrapper.style3 blockquote {
