@@ -1,0 +1,23 @@
+{
+  "name": "hempire-innovations",
+  "version": "0.0.1",
+  "description": "website for boone dispensary business hempire",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tresor-llc/cust-Hempire-2019.git"
+  },
+  "author": "kamto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tresor-llc/cust-Hempire-2019/issues"
+  },
+  "homepage": "https://github.com/tresor-llc/cust-Hempire-2019#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
