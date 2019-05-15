@@ -15,7 +15,7 @@ jQuery(document).ready(function() {
     // A handy little function to erase cookies,
     // useful when testing/debugging.
     //
-    // eraseCookie('jqverify');
+     eraseCookie('jqverify');
 
     if (!readCookie('jqverify')) {
         jQuery(agemodal).fadeIn();
@@ -32,7 +32,7 @@ jQuery(document).ready(function() {
         jQuery("#month").val() ? month = jQuery("#month").val() : month = 'notset';
         jQuery("#year").val() ? year = jQuery("#year").val() : year = 'notset';
         // age = jQuery("#location").val();
-        age = 21;
+        age = 18;
         jQuery("#remember").is(':checked') ? remember = 'checked' : remember = false;
 
         inputDate = new Date();
