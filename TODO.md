@@ -2,8 +2,8 @@
 
 pre-alpha - 5.5.19
 
-> Add banner video (hemp farm)
-> Add Social Media Area
+~~> Add banner video (hemp farm)~~
+~~> Add Social Media Area~~
 > Trim About Page Down
 
 About Page
@@ -12,6 +12,6 @@ About Page
 > Cleanup
 
 Contact Page
->
->
+> Singular Contact Page
+> Share social media
 >
