@@ -10,14 +10,15 @@ jQuery(document).ready(function() {
 
     var agemodal = "#agemodal",
         submit   = "#formsubmit",
-        content  = "#agegate"; //This is the entire website
+        content  = "#whole-page"; //This is the entire website
 
     // A handy little function to erase cookies,
     // useful when testing/debugging.
     //
-     eraseCookie('jqverify');
+    //eraseCookie('jqverify');
 
     if (!readCookie('jqverify')) {
+        // $(document).load("ageGate.html");
         jQuery(agemodal).fadeIn();
     } else {
         jQuery(content).fadeIn();
@@ -28,11 +29,14 @@ jQuery(document).ready(function() {
 
         var day, month, year, age, remember, inputDate, standardDate;
 
+        // Set date value
         jQuery("#day").val() ? day = jQuery("#day").val() : day = 'notset';
         jQuery("#month").val() ? month = jQuery("#month").val() : month = 'notset';
         jQuery("#year").val() ? year = jQuery("#year").val() : year = 'notset';
-        // age = jQuery("#location").val();
-        age = 18;
+        
+        // Set minimum age value -- country || default
+        jQuery("#location").val() ? age = jQuery("#location").val() : age = 18;
+        
         jQuery("#remember").is(':checked') ? remember = 'checked' : remember = false;
 
         inputDate = new Date();
@@ -44,10 +48,10 @@ jQuery(document).ready(function() {
             alert("Please enter your birthdate.");
             return false;
         } else if (age == 99 ) {
-            alert("Sorry, persons from your country are not permitted to view this site");
+            alert("Sorry, you're not permitted to view this site.  Check your country's age laws");
             return false;
         } else if ((standardDate - inputDate) < 0) {
-            alert("Sorry, only persons over the age of " + age + " may enter this site");
+            alert("Sorry, you gotta be " + age + " to enter.");
             return false;
         } else {
             if (remember) {
@@ -57,6 +61,7 @@ jQuery(document).ready(function() {
             };
             jQuery(agemodal).fadeOut();
             jQuery(content).fadeIn();
+            jQuery(agemodal).remove();
             return true;
         }
     });
