@@ -62,6 +62,7 @@ jQuery(document).ready(function() {
             jQuery(agemodal).fadeOut();
             jQuery(content).fadeIn();
             jQuery(agemodal).remove();
+            jQuery("#agemodal-style").remove();
             return true;
         }
     });
