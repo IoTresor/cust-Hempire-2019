@@ -7,3 +7,5 @@ nodejs
 
 Launch: 
 npm start
+
+This is fun :)
