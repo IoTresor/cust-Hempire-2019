@@ -3,7 +3,7 @@ const path = require('path');
 
 let app = express();
 let port = process.env.PORT || 3004;
-let host = process.env.HOST || "localhost";
+let host = process.env.HOST || "http://localhost";
 
 app.use(express.static('.'));
 app.get('/', (req, res) => {
