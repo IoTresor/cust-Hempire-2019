@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Transitive by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 
 <head>
@@ -48,14 +44,16 @@
 	<!-- Two -->
 	<section id="two" class="wrapper style3">
 		<div class="inner">
+			<header class="align-center">Flowers</header>
 			<div id="flexgrid">
 				<div>
 					<header>
-						<h3>CBD Flower</h3>
+						<h3>Colorado Cherry</h3>
 					</header>
 					<p>The real deal, nothing fancy to it. All natural is the way to go.</p>
 					<ul class="actions">
-						<li><a href="#" class="button alt">Learn More</a></li>
+						<li><a href="#modal" class="button alt" onclick="$('#modal').toggleClass('toggleModal')">Learn
+								More</a></li>
 					</ul>
 				</div>
 				<div>
@@ -83,6 +81,7 @@
 	<!-- Three -->
 	<section id="three" class="wrapper style2">
 		<div class="inner">
+			<header class="align-center">Pre Rolls</header>
 			<div id="flexgrid">
 				<div>
 					<header>
@@ -118,7 +117,7 @@
 	<!-- Four -->
 	<section id="four" class="wrapper style3">
 		<div class="inner">
-			<header class="align-center">View our Non-CBD Products</header>
+			<header class="align-center">Tinctures and Extracts</header>
 			<div id="flexgrid">
 				<div>
 					<header>
@@ -126,7 +125,8 @@
 					</header>
 					<p>The real deal, nothing fancy to it. All natural is the way to go.</p>
 					<ul class="actions">
-						<li><a href="https://shop.myctfo.me/hempirerefinery/index.php?route=product/category&path=27" class="button alt">Learn More</a></li>
+						<li><a href="https://shop.myctfo.me/hempirerefinery/index.php?route=product/category&path=27"
+								class="button alt">Learn More</a></li>
 					</ul>
 				</div>
 				<div>
@@ -135,7 +135,8 @@
 					</header>
 					<p>Who says you have to smoke it? Settle down with a cool drink after a long day.</p>
 					<ul class="actions">
-						<li><a href="https://shop.myctfo.me/hempirerefinery/index.php?route=product/category&path=35" class="button alt">Learn More</a></li>
+						<li><a href="https://shop.myctfo.me/hempirerefinery/index.php?route=product/category&path=35"
+								class="button alt">Learn More</a></li>
 					</ul>
 				</div>
 				<div>
@@ -144,13 +145,31 @@
 					</header>
 					<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
 					<ul class="actions">
-						<li><a href="https://shop.myctfo.me/hempirerefinery/index.php?route=product/category&path=36" class="button alt">Learn More</a></li>
+						<li><a href="https://shop.myctfo.me/hempirerefinery/index.php?route=product/category&path=36"
+								class="button alt">Learn More</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
 
+
+	<!-- Modal  -->
+	<div class="modal" id="modal" onclick="$('#modal').toggleClass('toggleModal')">
+		<div class="modal-content">
+			<span class="closeModal">&timesb;</span>
+			<div>
+				<form action="/payment" method="post">
+					<script src="https://securionpay.com/checkout.js" class="securionpay-button"
+						data-key="pu_test_WVMFC9GFuvm54b0uorifKkCh"
+						data-checkout-request="Y2Y5Y2UyZDgzMzFjNTMxZjgzODlhNjE2YTE4Zjk1NzhjMTM0Yjc4NGRhYjVjYjdlNGI1OTY0ZTc3OTBmMTczY3x7ImNoYXJnZSI6eyJhbW91bnQiOjQ5OSwiY3VycmVuY3kiOiJFVVIifX0="
+						data-name="Hempire Innovations" data-description="Complete your purchase"
+						data-checkout-button="Order Now">
+					</script>
+				</form>
+			</div>
+		</div>
+	</div>
 	<!-- Footer -->
 	<footer id="footer" class="wrapper">
 		<div class="inner">
@@ -191,4 +210,4 @@
 
 </body>
 
-</html>
+</html>4/store.html#modalDiv
