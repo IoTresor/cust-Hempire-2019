@@ -24,6 +24,17 @@ class SecurionPayService {
             email: 'user@example.com',
         })
     }
+
+    async chargeRequest(payment, currency) {
+        return await api.charges.create({
+            "amount": payment,
+            "currency": currency,
+            "description": "Another one for the books!"
+        })
+    }
+
+    await checkoutRequest()
+
 }
 
 
