@@ -28,9 +28,6 @@ app.post('/payment', (err, req, res, next) => {
         console.log(err)
     }
 
-
-
-
     //Response
     res.sendFile(path.join(__dirname, "/", "/about.html"))
 })

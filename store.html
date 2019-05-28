@@ -23,14 +23,14 @@
 		<ul class="links">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
-			<li><a href="store.html">Store</a></li>
-			<li><a href="generic.html">Blog</a></li>
+			<li><a href="/store">Store</a></li>
+			<!-- <li><a href="generic.html">Blog</a></li> -->
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
 
 	<!-- One -->
-	<section id="four" class="wrapper style1">
+	<section id="four" class="wrapper style2">
 		<div class="inner">
 
 			<header class="align-center">
@@ -52,7 +52,7 @@
 					</header>
 					<p>The real deal, nothing fancy to it. All natural is the way to go.</p>
 					<ul class="actions">
-						<li><a href="#modal" class="button alt" onclick="$('#modal').toggleClass('toggleModal')">Learn
+						<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
 								More</a></li>
 					</ul>
 				</div>
@@ -62,7 +62,8 @@
 					</header>
 					<p>Who says you have to smoke it? Settle down with a cool drink after a long day.</p>
 					<ul class="actions">
-						<li><a href="#" class="button alt">Learn More</a></li>
+						<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
+								More</a></li>
 					</ul>
 				</div>
 				<div>
@@ -71,9 +72,40 @@
 					</header>
 					<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
 					<ul class="actions">
-						<li><a href="#" class="button alt">Learn More</a></li>
+						<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
+								More</a></li>
 					</ul>
 				</div>
+				<div>
+						<header>
+							<h3>CBD Concentrates</h3>
+						</header>
+						<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
+						<ul class="actions">
+							<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
+									More</a></li>
+						</ul>
+					</div>
+					<div>
+							<header>
+								<h3>CBD Concentrates</h3>
+							</header>
+							<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
+							<ul class="actions">
+								<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
+										More</a></li>
+							</ul>
+						</div>
+						<div>
+								<header>
+									<h3>CBD Concentrates</h3>
+								</header>
+								<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
+								<ul class="actions">
+									<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
+											More</a></li>
+								</ul>
+							</div>
 			</div>
 		</div>
 	</section>
@@ -89,7 +121,8 @@
 					</header>
 					<p>The real deal, nothing fancy to it. All natural is the way to go.</p>
 					<ul class="actions">
-						<li><a href="#" class="button alt">Learn More</a></li>
+						<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
+								More</a></li>
 					</ul>
 				</div>
 				<div>
@@ -98,7 +131,8 @@
 					</header>
 					<p>Who says you have to smoke it? Settle down with a cool drink after a long day.</p>
 					<ul class="actions">
-						<li><a href="#" class="button alt">Learn More</a></li>
+						<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
+								More</a></li>
 					</ul>
 				</div>
 				<div>
@@ -107,7 +141,8 @@
 					</header>
 					<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
 					<ul class="actions">
-						<li><a href="#" class="button alt">Learn More</a></li>
+						<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
+								More</a></li>
 					</ul>
 				</div>
 			</div>
@@ -125,8 +160,8 @@
 					</header>
 					<p>The real deal, nothing fancy to it. All natural is the way to go.</p>
 					<ul class="actions">
-						<li><a href="https://shop.myctfo.me/hempirerefinery/index.php?route=product/category&path=27"
-								class="button alt">Learn More</a></li>
+						<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
+								More</a></li>
 					</ul>
 				</div>
 				<div>
@@ -135,8 +170,8 @@
 					</header>
 					<p>Who says you have to smoke it? Settle down with a cool drink after a long day.</p>
 					<ul class="actions">
-						<li><a href="https://shop.myctfo.me/hempirerefinery/index.php?route=product/category&path=35"
-								class="button alt">Learn More</a></li>
+						<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
+								More</a></li>
 					</ul>
 				</div>
 				<div>
@@ -145,8 +180,8 @@
 					</header>
 					<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
 					<ul class="actions">
-						<li><a href="https://shop.myctfo.me/hempirerefinery/index.php?route=product/category&path=36"
-								class="button alt">Learn More</a></li>
+						<li><a class="button alt" id="btnLearnMore" onclick="toggleModal()">Learn
+								More</a></li>
 					</ul>
 				</div>
 			</div>
@@ -155,11 +190,29 @@
 
 
 	<!-- Modal  -->
-	<div class="modal" id="modal" onclick="$('#modal').toggleClass('toggleModal')">
+	<div class="modal" id="modal">
 		<div class="modal-content">
-			<span class="closeModal">&timesb;</span>
-			<div>
-				<form action="/payment" method="post">
+			<div class="box alt">
+				<div class="" onclick="toggleModal()" style="text-align: right; color: black;">&#10006;</div>
+				<img id="productImage" class="image fit" src="images/p3.jpg" />
+				<div id="productDescription" class="content">
+					<h3 class="align-center">About the Product</h3>
+					<!-- <div id="selectQuantity" class="align-right">
+						<selec>
+							<option value="0"></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</selec>
+					</div> -->
+					<p id="description">
+						This is a wonderful, great tasting product.
+					</p>
+				</div>
+
+				<form action="/payment" method="post" style="vertical-align: 67%; text-align: center;">
 					<script src="https://securionpay.com/checkout.js" class="securionpay-button"
 						data-key="pu_test_WVMFC9GFuvm54b0uorifKkCh"
 						data-checkout-request="Y2Y5Y2UyZDgzMzFjNTMxZjgzODlhNjE2YTE4Zjk1NzhjMTM0Yjc4NGRhYjVjYjdlNGI1OTY0ZTc3OTBmMTczY3x7ImNoYXJnZSI6eyJhbW91bnQiOjQ5OSwiY3VycmVuY3kiOiJFVVIifX0="
@@ -208,6 +261,23 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 
+	<script>
+		// Custom Modal Scripts
+		var modalInner = document.getElementsByClassName('modal-content');
+		var modalDiv = document.getElementById('modal');
+		var siteHeader = document.getElementById('header');
+
+
+
+		function toggleModal() {
+
+			modalDiv.classList.contains('toggleModal') ? modalDiv.classList.remove('toggleModal') : modalDiv.classList.add(
+				'toggleModal');
+			modalDiv.classList.contains('toggleModal') ? siteHeader.style.display = 'none' : siteHeader.style.display = '';
+
+		}
+	</script>
+
 </body>
 
-</html>4/store.html#modalDiv
+</html>

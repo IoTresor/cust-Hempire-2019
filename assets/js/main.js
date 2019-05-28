@@ -137,15 +137,6 @@
 				side: 'right'
 			});
 
-		var $modalDiv = $('#modal'),
-			$modal = $('.modal-content');
-
-
-		function() {
-			$modalDiv.addEventListener('click', $modalDiv.toggleClass('toggleModal'))
-		}
-
-
 	});
 
 })(jQuery);
