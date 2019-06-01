@@ -5,5 +5,7 @@ Hello! This project is for hempire innovations
 Requirements:
 nodejs
 
-Launch: 
-npm start
+_To deploy
+> clone the repository locally
+> go into the project folder
+> npm install && npm start
