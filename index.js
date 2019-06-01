@@ -18,8 +18,8 @@ app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, "/", "/index.html"));
 })
 
-app.get('/store', (req, res) => {
-    res.sendFile(path.join(__dirname, "/", "/store.html"))
+app.get('/store.html', (req, res) => {
+    res.sendFile(path.join(__dirname, "/", "/store.html.html"))
 })
 
 

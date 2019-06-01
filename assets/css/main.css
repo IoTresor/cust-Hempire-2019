@@ -4409,7 +4409,7 @@ body.is-loading #banner:before {
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1rem 1.5rem;
-  width: 43%;
+  width: 23%;
   height: 53%;
   border-radius: 0.5rem;
   display: table;
