@@ -10,14 +10,15 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
 </head>
 
-<body class="subpage">
+<body class="subpage" onload="comingSoon()">
 
 	<!-- Header -->
 	<header id="header">
 		<div class="logo"><a href="index.html">Hempire Innovations</a></div>
-		<i class="fa fa-shopping-cart" style="padding-right: 1%">
-			<div class="snipcart-summary badge"><span class="snipcart-total-items"></span></div>
-		</i>
+
+		<span class="snipcart-summary badge" style="padding-right: 1%"><i class="fa fa-shopping-cart"></i> <span
+				class="snipcart-total-items"></span></span>
+
 		<a href="#menu" class="toggle"><span>Menu</span></a>
 	</header>
 
@@ -37,7 +38,6 @@
 	<!-- One -->
 	<section id="four" class="wrapper style2">
 		<div class="inner">
-
 			<header class="align-center">
 				<h2>Welcome to our Store</h2>
 				<p>Explore a wide variety of CBD Products for your consumption.</p>
@@ -269,6 +269,7 @@
 		</div>
 	</footer>
 
+
 	<!-- Scripts -->
 	<script src="/assets/js/jquery.min.js"></script>
 	<script src="/assets/js/jquery.scrolly.min.js"></script>
@@ -325,7 +326,9 @@
 			return (item)
 		}
 
-		function toggleCartButton() {}
+		function toggleCartButton() {
+
+		}
 
 		function toggleModal() {
 			//Open & Close Modal
@@ -421,6 +424,19 @@
 					break;
 			}
 
+		}
+	</script>
+
+	<script>
+		// Coming Soon Scripts
+		function comingSoon() {
+			//Open & Close Modal
+			modalDiv.classList.contains('toggleModal') ? modalDiv.classList.remove('toggleModal') : modalDiv.classList.add(
+				'toggleModal');
+			modalDiv.classList.contains('toggleModal') ? siteHeader.style.display = 'none' : siteHeader.style.display = '';
+			$('.modal-content .box').remove()
+			let msg = $('<h2 class="align-center" style="margin-top: 8em">Coming Soon...</h2>')
+			$('.modal-content').append(msg);
 		}
 	</script>
 
