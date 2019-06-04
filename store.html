@@ -15,8 +15,13 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="logo"><a href="index.html">Hempire Innovations</a></div>
+		<i class="fa fa-shopping-cart" style="padding-right: 1%">
+			<div class="snipcart-summary badge"><span class="snipcart-total-items"></span></div>
+		</i>
 		<a href="#menu" class="toggle"><span>Menu</span></a>
 	</header>
+
+
 
 	<!-- Nav -->
 	<nav id="menu">
@@ -66,7 +71,7 @@
 				</div>
 				<div>
 					<header>
-						<h3>FDT-2</h3>
+						<h3>FDT-1</h3>
 					</header>
 					<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
 					<ul class="actions">
@@ -116,7 +121,8 @@
 					</header>
 					<p>The real deal, nothing fancy to it. All natural is the way to go.</p>
 					<ul class="actions">
-						<li><a class="button alt" id="btnPurchase" onclick="updateProduct('colorado')">Purchase</a>
+						<li><a class="button alt" id="btnPurchase"
+								onclick="updateProduct('colorado-rolls')">Purchase</a>
 						</li>
 					</ul>
 				</div>
@@ -126,7 +132,7 @@
 					</header>
 					<p>Who says you have to smoke it? Settle down with a cool drink after a long day.</p>
 					<ul class="actions">
-						<li><a class="button alt" id="btnPurchase" onclick="toggleModal('carson-rolls')">Purchase</a>
+						<li><a class="button alt" id="btnPurchase" onclick="updateProduct('carson-rolls')">Purchase</a>
 						</li>
 					</ul>
 				</div>
@@ -136,7 +142,7 @@
 					</header>
 					<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
 					<ul class="actions">
-						<li><a class="button alt" id="btnPurchase" onclick="toggleModal('FDT1-rolls')">Purchase</a>
+						<li><a class="button alt" id="btnPurchase" onclick="updateProduct('FDT1-rolls')">Purchase</a>
 						</li>
 					</ul>
 				</div>
@@ -146,7 +152,7 @@
 					</header>
 					<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
 					<ul class="actions">
-						<li><a class="button alt" id="btnPurchase" onclick="toggleModal('chillax-rolls')">Purchase</a>
+						<li><a class="button alt" id="btnPurchase" onclick="updateProduct('chillax-rolls')">Purchase</a>
 						</li>
 					</ul>
 				</div>
@@ -156,18 +162,18 @@
 					</header>
 					<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
 					<ul class="actions">
-						<li><a class="button alt" id="btnPurchase" onclick="toggleModal('grandma-rolls')">Purchase</a>
+						<li><a class="button alt" id="btnPurchase" onclick="updateProduct('grandma-rolls')">Purchase</a>
 						</li>
 					</ul>
 				</div>
 				<div>
 					<header>
-						<h3>CBD Concentrates</h3>
+						<h3>More Soon...</h3>
 					</header>
-					<p>High quality concentrates for your consumption. Enjoy a nice dab on any day.</p>
-					<ul class="actions">
-						<li><a class="button alt" id="btnPurchase" onclick="toggleModal()">Purchase</a></li>
-					</ul>
+					<p>Keep an eye out for more! We're always improving our product </p>
+					<!-- <ul class="actions">
+						<li><a class="button alt" id="btnPurchase" onclick="updateProduct()">Purchase</a></li>
+					</ul> -->
 				</div>
 			</div>
 		</div>
@@ -180,16 +186,16 @@
 			<div id="flexgrid">
 				<div>
 					<header>
-						<h3>Packages</h3>
+						<h3>Tinctures</h3>
 					</header>
 					<p>The real deal, nothing fancy to it. All natural is the way to go.</p>
 					<ul class="actions">
-						<li><a class="button alt" id="btnPurchase" onclick="toggleModal()">Purchase</a></li>
+						<li><a class="button alt" id="btnPurchase" onclick="updateProduct(tincture)">Purchase</a></li>
 					</ul>
 				</div>
 				<div>
 					<header>
-						<h3>Health & Nutrition</h3>
+						<h3>Extracts</h3>
 					</header>
 					<p>Who says you have to smoke it? Settle down with a cool drink after a long day.</p>
 					<ul class="actions">
@@ -217,10 +223,15 @@
 				<div class="" onclick="toggleModal()" style="text-align: right; color: black;">&#10006;</div>
 				<img id="productImage" alt="product image fit" src="images/hempLeaf.jpg" />
 				<div class="content">
-					<p id="description" class="align-left center">
+					<p id="description" class="align-center" style="display: inherit">
 
 					</p>
-					<div class="btnPayment align-right">
+					<div class="align-center btnPayment">
+						<button href="#" class="snipcart-add-item" data-item-id="2" data-item-name="Tshirt"
+							data-item-price="30.00" data-item-url="/" data-item-custom1-name="Special comments"
+							data-item-custom1-type="textarea">
+							Buy now
+						</button>
 
 					</div>
 				</div>
@@ -235,8 +246,10 @@
 				<!-- Social Media Links -->
 				<div class="inner">
 					<header class="align-center">
+						<p>By using this website you certify that you're 18 years or older</p>
+						<h5>Copyright Hempire Innovations 2019 &#183; (828) 282-441 &#183; 182 Howard St Basement Suite
+							A, Boone, NC 28607</h5>
 						<h2>Social Media</h2>
-						<p>© Hempire Innovations 2019 &lt;&gt; 182 Howard St Basement Suite A, Boone, NC 28607</p>
 						<ul class="icons">
 							<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
 							<li><a href="https://www.facebook.com/hempireinnovations/" class="icon fa-facebook"><span
@@ -263,12 +276,13 @@
 	<script src="/assets/js/skel.min.js"></script>
 	<script src="/assets/js/util.js"></script>
 	<script src="/assets/js/main.js"></script>
+	<!-- <script src="/assets/js/snipcart.js"></script> -->
 
 	<!-- Snipcart -->
+	<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart"
+		data-api-key="ZGNiMDRlN2UtYWMyZi00NmU1LWIyY2EtMzEzZTBjNWZhZjkwNjM2OTUxMDc3OTA2Njg1ODcw"></script>
 
-	<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="YOUR_API_KEY" id="snipcart"></script>
-	<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
-
+	<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
 
 	<script>
 		// Custom Modal Scripts
@@ -281,18 +295,37 @@
 
 		function createItem(id, name, price, weight) {
 			const btnPayment = document.getElementsByClassName('btnPayment');
+			// const snipButton = document.getElementsByClassName('snipcart-add-item');
+			const snipButton = $(".snipcart-add-item");
+			snipButton.remove();
 			let item = document.createElement('button');
 			item.classList.add("snipcart-add-item");
-			item.classList.add('align-right');
 			item.setAttribute("data-item-id", id);
 			item.setAttribute("data-item-name", name);
 			item.setAttribute("data-item-price", price);
 			item.setAttribute("data-item-weight", weight);
 			item.setAttribute("data-item-url", "http://hempireinnovations.com/store.html");
-			item.setAttribute("data-item-description", " a description");
+			item.setAttribute("data-item-description", "One of our quality hemp products");
 			item.innerText = "Add to Cart";
 
+
+			if (name.includes("Rolls")) {
+				item.setAttribute("data-item-custom1-name", "Amount (of Rolls");
+				item.setAttribute("data-item-custom1-options", "1|2|3|4|5|10|20");
+				item.setAttribute();
+			} else if (name.includes("tinctures")) {
+				item.setAttribute("data-item-custom1-name", "Milligrams (Qty)");
+				item.setAttribute("data-item-custom1-options", "500mg|1000mg");
+			} else {
+				item.setAttribute("data-item-custom1-name", "Grams (Qty)");
+				item.setAttribute("data-item-custom1-options",
+					"1 gram[+0.01]|2 grams[+7.01]|3.5 grams[17.01]|7 grams|14 grams|1 ounce");
+			}
+
+			return (item)
 		}
+
+		function toggleCartButton() {}
 
 		function toggleModal() {
 			//Open & Close Modal
@@ -310,32 +343,81 @@
 					modalImage.src = "/images/bg.jpg";
 					modalDesc.innerText =
 						"Resinous Fragrance of Berries & Citrus. Shades of Gold & Green. Sativa Dominant - 11% CBD.";
-					createItem(2, "Colorado Cherry", "7.99", "4.23");
+					$(".btnPayment").append(createItem(11, "Colorado Cherry", "7.99", "4.23"));
 					break;
 				case 'carson':
 					toggleModal();
 					modalImage.src = "/images/bg.jpg";
-					modalDesc.innerText = "";
-					createItem(2, "Colorado Cherry", "7.99", "4.23");
+					modalDesc.innerText =
+						"Cherry Flavor with a Subtle Piney Taste. Waves of Mental Stimulation. Sativa Dominant - 10% CBD.";
+					$(".btnPayment").append(createItem(1, "Carson Cherry", "7.99", "4.23"));
 					break;
 				case 'FDT1':
 					toggleModal();
 					modalImage.src = "/images/bg.jpg";
 					modalDesc.innerText =
 						"Pleasant % Balanced Mood. Mild Sweetness with Mellow & Musky Overtones.  Indica/Sativa Hybrid - 12% CBD.";
-					createItem(2, "Colorado Cherry", "7.99", "4.23");
+					$(".btnPayment").append(createItem(2, "FDT1", "7.99", "4.23"));
+
 					break;
 				case 'chillax':
 					toggleModal();
 					modalImage.src = "/images/bg.jpg";
 					modalDesc.innerText = "Earthy Taste, Sticky Icky.  Derived from Hindu Kush. Indica Dominant - 12% CBD.";
-					createItem(2, "Colorado Cherry", "7.99", "4.23");
+					$(".btnPayment").append(createItem(3, "Chillax", "7.99", "4.23"))
 					break;
 				case 'grandma':
 					toggleModal();
 					modalImage.src = "/images/bg.jpg";
+					modalDesc.innerText =
+						"Unique Aroma Reminiscent of Grandma’s Cooking. Induces a Full-Body Calmness.  Indica Dominant - 11% CBD.";
+					$(".btnPayment").append(createItem(4, "Grandma OG", "7.99", "4.23"));
+					break;
+					// Pre Rolls Section
+				case 'colorado-rolls':
+					toggleModal();
+					modalImage.src = "/images/preroll2.jpg";
+					modalDesc.innerText =
+						"Resinous Fragrance of Berries & Citrus. Shades of Gold & Green. Sativa Dominant - 11% CBD. 1 1/4 Size Cones.";
+					break;
+					$(".btnPayment").append(createItem(5, "Colorado Cherry Rolls", "7.99", "4.23"));
+
+				case 'carson-rolls':
+					toggleModal();
+					modalImage.src = "/images/preroll2.jpg";
+					modalDesc.innerText =
+						"Cherry Flavor with a Subtle Piney Taste. Waves of Mental Stimulation. Sativa Dominant - 10% CBD. 1 1/4 Size Cones.";
+					break;
+					$(".btnPayment").append(createItem(6, "Carson Cherry Rolls", "7.99", "4.23"));
+
+				case 'FDT1-rolls':
+					toggleModal();
+					modalImage.src = "/images/preroll2.jpg";
+					modalDesc.innerText =
+						"Pleasant % Balanced Mood. Mild Sweetness with Mellow & Musky Overtones.  Indica/Sativa Hybrid - 12% CBD. 1 1/4 Size Cones.";
+					break;
+					$(".btnPayment").append(createItem(7, "FDT1 Rolls", "7.99", "4.23"));
+				case 'chillax-rolls':
+					toggleModal();
+					modalImage.src = "/images/preroll2.jpg";
+					modalDesc.innerText =
+						"Earthy Taste, Sticky Icky.  Derived from Hindu Kush. Indica Dominant - 12% CBD. 1 1/4 Size Cones.";
+					break;
+					$(".btnPayment").append(createItem(8, "Chillax Rolls", "7.99", "4.23"));
+
+				case 'grandma-rolls':
+					toggleModal();
+					modalImage.src = "/images/preroll2.jpg";
+					modalDesc.innerText =
+						"Unique Aroma Reminiscent of Grandma’s Cooking. Induces a Full-Body Calmness.  Indica Dominant - 11% CBD.  1 1/4 Size Cones.";
+					break;
+					$(".btnPayment").append(createItem(9, "Grandma Rolls", "7.99", "4.23"));
+					// Tinctures Section
+				case 'tinctures':
+					toggleModal();
+					modalImage.src = "/images/preroll2.jpg";
 					modalDesc.innerText = "";
-					createItem(2, "Colorado Cherry", "7.99", "4.23");
+					$(".btnPayment").append(createItem(10, "Grandma Rolls", "7.99", "4.23"));
 					break;
 			}
 
