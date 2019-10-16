@@ -18,19 +18,6 @@ app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, "/", "/index.html"));
 })
 
-app.get('/store.html', (req, res) => {
-    res.sendFile(path.join(__dirname, "/", "/store.html.html"))
-})
-
-
-app.post('/payment', (err, req, res, next) => {
-    if (err) {
-        console.log(err)
-    }
-
-    //Response
-    res.sendFile(path.join(__dirname, "/", "/about.html"))
-})
 app.listen(port, (err) => {
     console.log(`[Server] Live on ${host}:${port}`)
     if (err) throw err
